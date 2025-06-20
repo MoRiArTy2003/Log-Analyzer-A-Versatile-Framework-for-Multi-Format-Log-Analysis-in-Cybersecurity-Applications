@@ -4,7 +4,11 @@ The log analyzer framework is designed with a modular, extensible architecture t
 
 ## 3.1 Architectural Overview
 
-The framework follows a layered architecture with clear separation between data acquisition, processing, analysis, and presentation layers. Figure 1 illustrates the high-level architecture of the system.
+The framework follows a layered architecture with clear separation between data acquisition, processing, analysis, and presentation layers. Figure 3.1 illustrates the high-level architecture of the system.
+
+![System Architecture](figures/figure_3_1_system_architecture.png)
+
+*Figure 3.1: High-level architecture of the log analyzer framework showing the four-layer design with performance metrics. The modular architecture enables efficient data flow from acquisition through processing to presentation, achieving 22,542 records/second average processing speed.*
 
 ```
 ┌───────────────────────────────────────────────────────────────────┐
@@ -133,6 +137,10 @@ The presentation layer provides interfaces for users to interact with the analys
 ## 3.3 Data Flow
 
 The data flow through the system follows a pipeline architecture:
+
+![Data Flow Diagram](figures/figure_3_2_data_flow.png)
+
+*Figure 3.2: Data flow pipeline showing the systematic processing stages from log acquisition to final results. The pipeline includes memory optimization and parallel processing paths for enhanced performance.*
 
 1. Log data is acquired from various sources through the acquisition layer.
 2. The format detection component identifies the log format and selects appropriate parsers.

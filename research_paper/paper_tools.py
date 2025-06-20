@@ -66,24 +66,52 @@ def process_includes(content, base_dir):
 
     return re.sub(include_pattern, replace_include, content)
 
-def combine_sections(main_file="main.md", output_file="complete_paper.md"):
-    """Combine all sections into a single markdown file."""
-    print(f"Combining sections from {main_file} into {output_file}...")
+def combine_sections(output_file="complete_paper_updated.md"):
+    """Update the complete paper with latest section content."""
+    print(f"Updating complete paper from individual sections...")
 
-    base_dir = os.path.dirname(os.path.abspath(main_file))
-    content = read_file(main_file)
-    processed_content = process_includes(content, base_dir)
+    # List of section files in order
+    section_files = [
+        "abstract_introduction.md",
+        "related_work.md",
+        "system_architecture.md",
+        "log_format_support.md",
+        "remote_log_acquisition.md",
+        "data_processing.md",
+        "visualization_techniques.md",
+        "case_studies.md",
+        "performance_evaluation.md",
+        "methodology_validation.md",
+        "future_work.md",
+        "conclusion.md",
+        "references.md",
+        "appendices.md"
+    ]
 
     try:
+        combined_content = []
+        combined_content.append("# Log Analyzer: A Versatile Framework for Multi-Format Log Analysis in Cybersecurity Applications\n")
+        combined_content.append("*Complete research paper with empirical validation*\n\n")
+
+        for section_file in section_files:
+            if os.path.exists(section_file):
+                print(f"Adding section: {section_file}")
+                content = read_file(section_file)
+                combined_content.append("---\n\n")
+                combined_content.append(content)
+                combined_content.append("\n\n")
+            else:
+                print(f"Warning: Section file not found: {section_file}")
+
         with open(output_file, 'w', encoding='utf-8') as file:
-            file.write(processed_content)
-        print(f"Successfully combined sections: {output_file}")
+            file.write(''.join(combined_content))
+        print(f"Successfully updated complete paper: {output_file}")
         return True
     except Exception as e:
         print(f"Error writing output file {output_file}: {e}")
         return False
 
-def create_docx_with_library(input_file="main.md", output_file="log_analyzer_paper.docx"):
+def create_docx_with_library(input_file="complete_paper.md", output_file="log_analyzer_paper.docx"):
     """Create a Word document using python-docx library."""
     if not DOCX_AVAILABLE:
         print("Error: python-docx library is not installed.")
@@ -139,7 +167,7 @@ def create_docx_with_pandoc(input_file="complete_paper.md", output_file="log_ana
     # Ensure the input file exists
     if not os.path.exists(input_file):
         # Try to combine sections first
-        if not combine_sections(main_file="main.md", output_file=input_file):
+        if not combine_sections(output_file=input_file):
             return False
 
     try:
@@ -172,7 +200,7 @@ def create_pdf_with_pandoc(input_file="complete_paper.md", output_file="log_anal
     # Ensure the input file exists
     if not os.path.exists(input_file):
         # Try to combine sections first
-        if not combine_sections(main_file="main.md", output_file=input_file):
+        if not combine_sections(output_file=input_file):
             return False
 
     try:

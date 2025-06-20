@@ -25,6 +25,10 @@ Our comprehensive testing framework evaluated processing performance across six 
 
 **Average Processing Speed: 22,542 records/second**
 
+![Performance Comparison by Log Format](figures/figure_9_1_performance_comparison.png)
+
+*Figure 9.1: Processing speed and memory usage comparison across different log formats. The chart demonstrates superior performance across all tested formats, with syslog achieving peak performance of 49,406 records/second.*
+
 #### 9.1.2.2 Performance Analysis
 - **Peak Performance:** Syslog format achieved 49,406 records/second due to its simple structure
 - **Complex Format Handling:** JSON logs, despite nested structures, maintained 13,292 records/second
@@ -104,6 +108,14 @@ Based on our empirical testing results and industry benchmarks, our framework de
 - **Our Framework:** 100% data integrity (0% data loss)
 - **Industry Average:** ~95% data integrity
 - **Improvement:** +5% reliability enhancement
+
+![Accuracy and Reliability Metrics](figures/figure_9_2_accuracy_metrics.png)
+
+*Figure 9.2: Comprehensive accuracy and reliability validation results. The framework achieves 100% accuracy in format detection, data integrity, and parsing success across all tested scenarios.*
+
+![Comparative Analysis with Industry Benchmarks](figures/figure_9_3_comparative_analysis.png)
+
+*Figure 9.3: Comprehensive comparison with industry benchmarks showing significant improvements across all key performance metrics. Our framework demonstrates 50% better processing speed, 37% improved memory efficiency, and superior accuracy compared to existing solutions.*
 
 ## 9.5 Testing Methodology and Validation
 

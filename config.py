@@ -9,8 +9,8 @@ APP_VERSION = "1.0.0"
 DEBUG = True
 
 # File paths
-DEFAULT_LOG_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "misc")
-EXAMPLE_LOG_FILE = os.path.join(DEFAULT_LOG_DIR, "browsinglogs_20240924.txt")
+DEFAULT_LOG_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "research_results", "test_data")
+EXAMPLE_LOG_FILE = os.path.join(DEFAULT_LOG_DIR, "browsing_logs_5000.txt")
 
 # Log types and their column definitions
 LOG_TYPES = {

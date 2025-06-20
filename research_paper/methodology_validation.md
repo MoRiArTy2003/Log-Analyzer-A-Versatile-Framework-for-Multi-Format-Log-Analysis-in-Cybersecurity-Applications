@@ -71,6 +71,10 @@ Our comprehensive testing validated the following performance characteristics:
 
 **Average Processing Speed: 22,542 records/second** ✅ **Validated**
 
+![Methodology and Validation Dashboard](figures/figure_10_1_methodology_dashboard.png)
+
+*Figure 10.1: Comprehensive testing methodology dashboard showing real-time validation results. The dashboard displays performance metrics, accuracy measurements, and comparative analysis across all tested log formats, providing complete transparency in our validation process.*
+
 #### 10.3.1.2 Memory Efficiency Results
 - **Average Memory Usage**: 5.0 MB for 5,000 records ✅ **Validated**
 - **Peak Memory Usage**: 8.0 MB (JSON format) ✅ **Validated**

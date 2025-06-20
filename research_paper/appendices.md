@@ -69,13 +69,22 @@ processing:
 ## Appendix C: User Interface Screenshots
 
 ### C.1 Dashboard View
-[Insert Dashboard Screenshot]
+
+![Dashboard Interface](figures/figure_C_1_dashboard_view.png)
+
+*Figure C.1: Main dashboard interface showing real-time performance metrics, processing statistics, and system status. The dashboard provides comprehensive monitoring of log processing activities with interactive charts and real-time updates.*
 
 ### C.2 Analysis View
-[Insert Analysis Screenshot]
+
+![Analysis Interface](figures/figure_C_2_analysis_view.png)
+
+*Figure C.2: Advanced analysis interface demonstrating pattern recognition, anomaly detection, and statistical analysis capabilities. The interface shows timeline analysis, event categorization, and real-time threat detection with interactive filtering and drill-down capabilities.*
 
 ### C.3 Visualization View
-[Insert Visualization Screenshot]
+
+![Visualization Interface](figures/figure_C_3_visualization_view.png)
+
+*Figure C.3: Comprehensive visualization interface featuring advanced charting capabilities, geospatial analysis, and interactive data exploration tools. The interface demonstrates the framework's ability to present complex log data through intuitive visual representations including heatmaps, network graphs, and temporal analysis.*
 
 ## Appendix D: Performance Metrics
 
