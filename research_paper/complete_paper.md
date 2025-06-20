@@ -70,7 +70,7 @@ The primary contributions of this research include:
 
 ## 1.5 Paper Organization
 
-The remainder of this paper is organized as follows: Section 2 reviews related work in log analysis for cybersecurity. Section 3 describes the system architecture of our framework. Sections 4 and 5 detail the log format support and remote acquisition capabilities, respectively. Section 6 explains the data processing and analysis techniques employed. Section 7 presents the visualization approaches. Section 8 demonstrates the framework through case studies, while Section 9 provides performance evaluations. Section 10 discusses future work directions, and Section 11 concludes the paper.
+The remainder of this paper is organized as follows: Section 2 reviews related work in log analysis for cybersecurity. Section 3 describes the system architecture of our framework, including the comprehensive testing and validation framework. Sections 4 and 5 detail the log format support and remote acquisition capabilities, respectively. Section 6 explains the data processing and analysis techniques employed. Section 7 presents the visualization approaches. Section 8 demonstrates the framework through case studies, while Section 9 provides comprehensive performance evaluations with empirical validation. Section 10 details our methodology and validation framework ensuring reproducibility and peer review. Section 11 discusses future work directions, and Section 12 concludes the paper.
 
 
 ---

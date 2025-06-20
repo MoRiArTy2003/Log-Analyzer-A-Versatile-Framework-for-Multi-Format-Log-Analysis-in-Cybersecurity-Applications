@@ -1,0 +1,24 @@
+# Research Results - Git Ignore Rules
+
+# Large test data files (>5MB) - these can be regenerated
+test_data/*_262144.txt
+test_data/*_349525.txt
+test_data/*_291271.txt
+test_data/*.txt
+!test_data/*_5000.txt
+
+# Generated test result files (can be regenerated)
+research_summary_*.json
+
+# Generated visualization files (can be regenerated)
+*.png
+
+# Keep essential documentation and small test files
+!FINAL_RESEARCH_SUMMARY.md
+!RESEARCH_PAPER_RESULTS.md
+!research_summary.txt
+!generate_visualizations.py
+!test_data/csv_logs_5000.csv
+!test_data/json_logs_5000.json
+!test_data/syslog_5000.log
+!test_data/*.gz
